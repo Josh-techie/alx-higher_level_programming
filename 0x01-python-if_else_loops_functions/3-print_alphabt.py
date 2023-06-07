@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-for s in "abcdefghijklmnopqrstuvwxyz":
-    if s == "q" or s == "e":
-        continue
-    print("{}".format(s), end="")
+for sletter in range(97, 123):
+    if chr(sletter) is not 'q' and chr(sletter) is not 'e':
+        print("{}".format(chr(sletter)), end="")

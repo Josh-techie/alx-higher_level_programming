@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-for u in range(10):
-    for v in range(10):
-        if int(u) >= int(v):
-            continue
-        elif int(u) == 8 and int(v) == 9:
-            print("{}{}".format(u, v))
-            continue
-        print("{}{}, ".format(u, v), end="")
+"""print all possible different conditions of two digits in ascending order.
+   the two digits must be different - 01 and 10 are considered identical
+"""
+for num1 in range(0, 10):
+    for num2 in range(num1 + 1, 10):
+        if num1 == 8 and num2 == 9:
+            print("{}{}".format(num1, num2))
+        else:
+            print("{}{}".format(num1, num2), end=", ")
