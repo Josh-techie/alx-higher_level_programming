@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-
-for x in range(0, 10):
-    for y in range(x + 1, 10):
-        if (not (x == 8 and y == 9)):
-            print("{}{}".format(x, y), end=", ")
-        else:
-            print("{}{}".format(x, y))
+for u in range(10):
+    for v in range(10):
+        if int(u) >= int(v):
+            continue
+        elif int(u) == 8 and int(v) == 9:
+            print("{}{}".format(u, v))
+            continue
+        print("{}{}, ".format(u, v), end="")

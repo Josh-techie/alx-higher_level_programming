@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-for m in range(97, 123):
-    if (m != 101 and m != 113):
-        print("{}".format(chr(m)), end='')
+for s in "abcdefghijklmnopqrstuvwxyz":
+    if s == "q" or s == "e":
+        continue
+    print("{}".format(s), end="")
