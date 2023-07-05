@@ -1,11 +1,20 @@
->>> print_square = __import__('4-print_square').print_square
+****************************
+Test -> 4-print_square.py
+============================
 
-# Test 1: Valid input
+>>> print_square = __import__("4-print_square").print_square
+
+=======Succes cases=========
+
+>>> print_square(1)
+#
+
 >>> print_square(4)
 ####
 ####
 ####
 ####
+
 >>> print_square(10)
 ##########
 ##########
@@ -17,38 +26,53 @@
 ##########
 ##########
 ##########
+
 >>> print_square(0)
->>> print_square(1)
-#
 
-# Test 2: Invalid input - size less than 0
->>> try:
-...	    print_square(-1)
-... except ValueError as e:
-...     assert str(e) == "size must be >= 0"
-... else:
-...     raise AssertionError("Expected ValueError")
+======Error cases===========
+>>> print_square(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
 
-# Test 3: Invalid input - size is a float less than 0
->>> try:
-...     print_square(0.5)
-... except TypeError as e:
-...     assert str(e) == "size must be an integer"
-... else:
-...     raise AssertionError("Expected TypeError")
+>>> print_square(3.3)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
 
-# Test 4: Invalid input - size is not an integer
->>> try:
-...     print_square("4")
-... except TypeError as e:
-...     assert str(e) == "size must be an integer"
-... else:
-...     raise AssertionError("Expected TypeError")
+>>> print_square("4 x 4")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
 
-# Test 5: Invalid input - size is not an integer
->>> try:
-...     print_square("")
-... except TypeError as e:
-...     assert str(e) == "size must be an integer"
-... else:
-...     raise AssertionError("Expected TypeError")
+>>> print_square([4, 4])
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square({4, 4})
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square((4, 4))
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+========Not Negative===========
+>>> print_square(-4)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+=======Arguments Errors========
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> print_square(2, 2)
+Traceback (most recent call last):
+...
+TypeError: print_square() takes 1 positional argument but 2 were given
