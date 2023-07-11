@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-'''Module class BaseGeometry'''
+""" creating a class """
 
 
 class BaseGeometry:
-    '''empty class BaseGeometry'''
-    pass
-
+    """
+    BaseGeometry class
+    """
     def area(self):
-        """Raises an Exception with the message: area() is not implemented"""
+        """
+        area method
+        """
         raise Exception("area() is not implemented")
