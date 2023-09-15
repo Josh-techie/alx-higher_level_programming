@@ -1,4 +1,4 @@
-Certainly, here is the revised summary:
+
 
 ```markdown
 # Project: 0x0F. Python - Object-relational mapping | ALX Africa Intranet
