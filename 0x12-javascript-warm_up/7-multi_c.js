@@ -1,6 +1,12 @@
 #!/usr/bin/node
-const loveC = 'C is fun';
-const x = process.argv[2];
-for (let i = 0; i < x; i++) {
-  console.log(loveC);
+
+const args = process.argv.slice(2);
+const num = parseInt(args[0]);
+
+if (isNaN(num)) {
+  console.log('Missing number of occurrences');
+} else {
+  for (let i = 0; i < num; i++) {
+    console.log('C is fun');
+  }
 }
