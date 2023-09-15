@@ -2,7 +2,7 @@
 
 ```markdown
 # Project: 0x0F. Python - Object-relational mapping | ALX Africa Intranet
-**Author:** Joe-techie [Josh-techie](https://github.com/Josh-techie)
+
 
 ## Overview
 This project is part of ALX Africa's curriculum and focuses on Python's Object-Relational Mapping (ORM) techniques, particularly using SQLAlchemy. The goal is to bridge the gap between Python programming and databases, enabling seamless interaction and data manipulation. By leveraging ORM, we abstract away the underlying SQL queries, making database operations more Pythonic and less dependent on specific storage solutions.
@@ -64,3 +64,7 @@ Make sure to grant the necessary permissions and ensure that your MySQL server i
 ```
 
 Please replace `<mysql_username>`, `<mysql_password>`, and `<database_name>` with the actual database credentials when using the scripts.
+
+```
+
+## Author:** Joe-techie [Josh-techie](https://github.com/Josh-techie)
