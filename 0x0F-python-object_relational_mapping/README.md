@@ -67,4 +67,4 @@ Please replace `<mysql_username>`, `<mysql_password>`, and `<database_name>` wit
 
 ```
 
-## Author:** Joe-techie [Josh-techie](https://github.com/Josh-techie)
+## Author: [Josh-techie](https://github.com/Josh-techie)
