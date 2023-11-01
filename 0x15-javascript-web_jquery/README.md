@@ -32,7 +32,7 @@ Read or watch the following resources to gain a deeper understanding of the conc
 ## Course to explore:
 - [JQuery-Linkedin-Learning]( https://www.linkedin.com/learning/jquery-essential-training-2)
 
-### General
+## General
 
 - Explain why jQuery makes front-end programming easier.
 - Select HTML elements using both pure JavaScript and jQuery.
@@ -44,7 +44,7 @@ Read or watch the following resources to gain a deeper understanding of the conc
 - Listen/bind to DOM events and user events effectively.
 
 
-### Import JQuery
+## Import JQuery
 
 ```html
 <head>
