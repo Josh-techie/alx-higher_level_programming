@@ -1,7 +1,11 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+import add_0
+
 if __name__ == "__main__":
     from add_0 import add
     a = 1
     b = 2
-    n = add(a, b)
-    print("{} + {} = {}".format(a, b, n))
+    res = add(a, b)      
+    print("{} + {} = {}".format(a, b, res ))  
+            
+    
